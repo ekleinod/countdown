@@ -8,5 +8,5 @@ The program is useful for starting presentations, mettings, or other short-terme
 
 See [Wiki](countdown/wiki/Home) for more information.
 
-The basic code is derived from [](http://sourceforge.net/projects/countdown/)
+The basic code is derived from [sourceforge project countdown](http://sourceforge.net/projects/countdown/)
 
