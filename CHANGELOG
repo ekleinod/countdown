@@ -1,1 +1,14 @@
+2006-04-25, version 0.2:
+	changes:
+	- improved documentation
+	- simplification of code
+	- redesign of gui (not better but resizable)
+	- background image for clock
+	- splash and background maximizable
+	- new exit-on-zero-feature
+	- saving of configurations debugged (extension problem)
+	- configuration file as parameter allowed
+	- updated to java 1.5
+	problems:
+	- tenths of seconds not computed right on slow computers
 2004-03-31, version 0.1: initial release.  No known problems.
