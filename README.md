@@ -6,7 +6,7 @@ It counts time down, showing the clock an a freely editable text. When the clock
 
 The program is useful for starting presentations, mettings, or other short-termed events.
 
-See [Wiki](wiki/Home) for more information.
+See [Wiki](/wiki) for more information.
 
 The basic code is derived from [sourceforge project countdown](http://sourceforge.net/projects/countdown/)
 
