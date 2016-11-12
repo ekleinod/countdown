@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+  <Properties>
+    <Property name="logfilename">../../../../rani/schiri/refereemanager/log/refereemanager.log</Property>
+    <Property name="logpattern">%d %-5p (%F:%L) - %m%n</Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="${logpattern}" />
+    </Console>
+    <!-- File name="FILE" fileName="${logfilename}">
+      <PatternLayout pattern="${logpattern}" />
+    </File> -->
+  </Appenders>
+
+  <Loggers>
+    <Root level="debug">
+      <AppenderRef ref="STDOUT" />
+    </Root>
+    <!--Root level="info">
+      <AppenderRef ref="STDOUT" />
+      <AppenderRef ref="FILE" />
+    </Root-->
+  </Loggers>
+</Configuration>

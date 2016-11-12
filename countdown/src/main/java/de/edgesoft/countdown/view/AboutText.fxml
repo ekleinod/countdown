@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.edgesoft.countdown.controller.AboutTextController">
+   <children>
+      <Label text="Ein Qualitätsprodukt aus dem Hause &quot;edge-soft&quot;." wrapText="true" />
+      <Label />
+      <Label text="Verbesserungen, Fehler, Hinweise bitte per E-Mail an:" wrapText="true" />
+      <Hyperlink onAction="#handleEmailLinkAction" text="ekleinod@edgesoft.de" />
+      <Label text="Alternativ kann für angemeldete Nutzer auch eine Fehlermeldung bei github eröffnet werden:" wrapText="true" />
+      <Hyperlink onAction="#handleWebLinkAction" text="https://github.com/ekleinod/countdown/issues" />
+      <Label />
+      <Label text="Die Icons sind aus dem Papirus icon theme entnommen:" wrapText="true" />
+      <Hyperlink onAction="#handleWebLinkAction" text="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme-gtk" />
+   </children>
+</VBox>
