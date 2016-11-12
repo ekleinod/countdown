@@ -1,3 +1,4 @@
+package de.edgesoft.countdown;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
@@ -6,7 +7,7 @@ import java.net.URL;
 import javax.swing.ImageIcon;
 
 /**
- * Die Klasse kümmert sich um Belange des Bilderholens.
+ * Die Klasse kï¿½mmert sich um Belange des Bilderholens.
  * <br />
  * Geht mit normalen Bildern und SVG-Bildern.
  * 
@@ -16,13 +17,13 @@ import javax.swing.ImageIcon;
  */
 public class ImageHandler {
 	
-	/** Wert für Originalmaße. */
+	/** Wert fï¿½r Originalmaï¿½e. */
 	private final static int ORIGINAL = -1;
 
 	/**
-	 * Die Methode gibt ein ImageIcon zurück, dass die angegebene Datei als Bild enthält.
+	 * Die Methode gibt ein ImageIcon zurï¿½ck, dass die angegebene Datei als Bild enthï¿½lt.
 	 * 
-	 * @param objCalling aufrufendes Objekt, für den <code>getClass</code>-Aufruf nötig, sonst kann das wegfallen 
+	 * @param objCalling aufrufendes Objekt, fï¿½r den <code>getClass</code>-Aufruf nï¿½tig, sonst kann das wegfallen 
 	 * @param strFilename Dateiname des Bilds
 	 * @return Bild-Objekt oder leeres Objekt, falls ein Fehler auftrat
 	 */
@@ -33,9 +34,9 @@ public class ImageHandler {
 	}
 	
 	/**
-	 * Die Methode gibt ein ImageIcon zurück, dass die angegebene Datei als Bild enthält.
+	 * Die Methode gibt ein ImageIcon zurï¿½ck, dass die angegebene Datei als Bild enthï¿½lt.
 	 * 
-	 * @param objCalling aufrufendes Objekt, für den <code>getClass</code>-Aufruf nötig, sonst kann das wegfallen 
+	 * @param objCalling aufrufendes Objekt, fï¿½r den <code>getClass</code>-Aufruf nï¿½tig, sonst kann das wegfallen 
 	 * @param strFilename Dateiname des Bilds
 	 * @return Bild-Objekt oder leeres Objekt, falls ein Fehler auftrat
 	 */
@@ -43,8 +44,8 @@ public class ImageHandler {
 		
 		ImageIcon imgReturn = null;
 
-		// einfache Lösung, die in jars versagt: imgReturn = new ImageIcon(strFilename);
-		// daher komplizierte Lösung über URLs
+		// einfache Lï¿½sung, die in jars versagt: imgReturn = new ImageIcon(strFilename);
+		// daher komplizierte Lï¿½sung ï¿½ber URLs
 		try {
 
 			URL urlFile = null;

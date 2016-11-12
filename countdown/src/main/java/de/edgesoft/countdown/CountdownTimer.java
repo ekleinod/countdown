@@ -1,3 +1,4 @@
+package de.edgesoft.countdown;
 import javax.swing.UIManager;
 import java.awt.*;
 

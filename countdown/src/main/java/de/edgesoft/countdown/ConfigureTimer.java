@@ -1,3 +1,4 @@
+package de.edgesoft.countdown;
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
 import java.awt.Color;
