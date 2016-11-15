@@ -48,7 +48,7 @@ public class Resources {
 	 * @since 0.3.0
 	 */
 	public static Image loadImage(final String theImagePath) {
-		return new Image(Countdown.class.getClassLoader().getResourceAsStream(theImagePath));
+		return new Image(PresentationCountdown.class.getClassLoader().getResourceAsStream(theImagePath));
 	}
 
 	/**
@@ -65,11 +65,11 @@ public class Resources {
         try {
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Countdown.class.getResource(String.format("view/%s.fxml", thePaneName)));
+            loader.setLocation(PresentationCountdown.class.getResource(String.format("view/%s.fxml", thePaneName)));
             return new AbstractMap.SimpleImmutableEntry<>((Pane) loader.load(), loader);
 
         } catch (IOException e) {
-            Countdown.logger.catching(e);
+            PresentationCountdown.logger.catching(e);
             return null;
         }
     }
@@ -85,7 +85,7 @@ public class Resources {
 	 */
 	public static String loadFile(final String theFileName) {
 
-		try (BufferedReader reader = new BufferedReader(new InputStreamReader(Countdown.class.getClassLoader().getResourceAsStream(theFileName)))) {
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(PresentationCountdown.class.getClassLoader().getResourceAsStream(theFileName)))) {
 
 			StringBuilder sbReturn = new StringBuilder();
 			String sLine = null;
@@ -97,7 +97,7 @@ public class Resources {
 			return sbReturn.toString();
 
 		} catch (Exception e) {
-            Countdown.logger.catching(e);
+            PresentationCountdown.logger.catching(e);
 			return "";
 		}
 

@@ -5,9 +5,6 @@ import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.sun.deploy.uitoolkit.impl.fx.HostServicesFactory;
-import com.sun.javafx.application.HostServicesDelegate;
-
 import de.edgesoft.countdown.controller.AppLayoutController;
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
@@ -49,7 +46,7 @@ import javafx.util.Duration;
  * @version 0.3.0
  * @since 0.3.0
  */
-public class Countdown extends Application {
+public class PresentationCountdown extends Application {
 
 	/**
 	 * Central logger for all classes.
@@ -57,17 +54,7 @@ public class Countdown extends Application {
 	 * @version 0.3.0
 	 * @since 0.3.0
 	 */
-	public static final Logger logger = LogManager.getLogger(Countdown.class.getPackage().getName());
-
-	/**
-	 * Host services delegate.
-	 *
-	 * Needed for opening links in browser etc.
-	 *
-	 * @version 0.3.0
-	 * @since 0.3.0
-	 */
-	public static HostServicesDelegate hostServices = null;
+	public static final Logger logger = LogManager.getLogger(PresentationCountdown.class.getPackage().getName());
 
 	/**
 	 * Starts the application.
@@ -99,9 +86,6 @@ public class Countdown extends Application {
 		// load app layout and controller, then delegate control to controller
     	Map.Entry<Pane, FXMLLoader> pneLoad = Resources.loadPane("AppLayout");
     	((AppLayoutController) pneLoad.getValue().getController()).initController(primaryStage);
-
-        // host services
-        hostServices = HostServicesFactory.getInstance(this);
 
 	}
 
